@@ -1,0 +1,36 @@
+@include media-breakpoint-down(xl) {
+  .carouselSwipe {
+    .carousel-inner {
+      display: flex;
+      overflow-x: scroll;
+    }
+    .carousel-item {
+      width: auto;
+      margin-right: inherit;
+      display: flex;
+    }
+    .carousel-item.active {
+      display: flex;
+      border-bottom: none;
+      color: inherit;
+      font-weight: inherit;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: none;
+    }
+  }
+}
+
+.carouselSwipe {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+  .carousel-control-prev {
+    background: linear-gradient(90deg, rgba(62,24,58,1) 0%, rgba(95,162,182,1) 50%, rgba(95,162,182,0) 100%);
+  }
+  .carousel-control-next {
+    background: linear-gradient(90deg, rgba(95,162,182,0) 0%, rgba(95,162,182,1) 50%, rgba(62,24,58,1) 100%);
+  }
+}

@@ -1,0 +1,44 @@
+.mosaic {
+  display: inline-flex;
+  width: 100%;
+  background-size: cover;
+}
+
+.mosaic-res {
+  height: 100%;
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 30px;
+  }
+  @include media-breakpoint-down(lg) {
+    height: 300px;
+  }
+}
+
+.mosaic-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mosaic-image1 {
+  background-image: url(../assets/limpeza.jpg)
+}
+
+.mosaic-h35 {
+  height: 35%;
+}
+
+.mosaic-h65 {
+  height: 65%;
+}
+
+.mosaic-image2 {
+  background-image: url(../assets/aparelhos2.jpg)
+}
+
+.mosaic-image3 {
+  background-image: url(../assets/aparelhos.jpg);
+  background-position: -200px 0px;
+}

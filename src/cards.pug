@@ -1,0 +1,28 @@
+section.position-relative
+  .container.cardbox-absolute
+    .cardbox-flex
+      mixin cardbox(cardclass, path, title, text, button)
+        if button
+          .cardbox(class=cardclass)
+            .imgbox
+              img(src=path, alt="")
+            .title
+              = title
+            p 
+              = text
+            button.btn.btn-outline-primary.btn-sm.rounded-0(type="submit") Saiba mais 
+        else
+          a.cardbox(class=cardclass, href="#")
+            .imgbox
+              img(src=path, alt="")
+            .title
+              = title
+            p 
+              = text
+
+          
+
+      +cardbox('link link-white cardbox-style1','assets/convenios.svg','CONVÊNIOS','Uma grande variedade de convênios, confira aqui o seu.')
+      +cardbox('link link-white cardbox-style1','assets/clock.svg','HORÁRIOS',' Segunda a sexta de 08h00 às 19h00.')
+      +cardbox('link link-white cardbox-style1','assets/users.svg','CORPO CLÍNICO','A Personnalité conta com uma equipe completa, de clínica geral até cirugias avançadas ou estética do sorriso.')
+      +cardbox('link link-white cardbox-style1','assets/calendar.svg','AGENDAMENTO','Entre em contato através do nosso whatsapp e faça seu agendamento. Estamos te aguardando.')

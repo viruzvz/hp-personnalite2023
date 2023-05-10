@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(href='https://fonts.cdnfonts.com/css/montserrat' rel='stylesheet')
+    title Arquetipo-bootstrap 5.2
+    link(rel='stylesheet', href='styles/main.scss')
+    link(rel='icon', type='image/svg+xml', href='assets/favicon.svg')
+    script(type="module" src='scripts/main.js')
+    script(type="module" src='scripts/bootstrap.js')
+    script(src='https://cdn2.woxo.tech/a.js#64586f1c510f85d5292ec1f7' async='' data-usrc='')
+    script(src='../node_modules/jquery/dist/jquery.js')
+
+  body 
+    header
+      include social.pug
+      include navbar.pug
+      include carousel.pug
+    section.content
+      include cards.pug
+      include resumo.pug
+      include servicos.pug
+      include equipe.pug
+      include booking.pug
+      include map.pug
+      include footer.pug
+    footer
