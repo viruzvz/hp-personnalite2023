@@ -3,14 +3,15 @@ section.position-relative
     .cardbox-flex
       mixin cardbox(cardclass, path, title, text, button)
         if button
-          .cardbox(class=cardclass)
+          .cardbox.perfil(class=cardclass)
             .imgbox
-              img(src=path, alt="")
+              img.card-img(src=path, alt="")
             .title
               = title
+            img(src="assets/equipe/dr-thales-assinatura.png", alt="Assinatura")
             p 
               = text
-            button.btn.btn-outline-primary.btn-sm.rounded-0(type="submit") Saiba mais 
+            button.btn.btn-outline-primary.btn-sm.rounded-0(type="submit") Saiba mais
         else
           a.cardbox(class=cardclass, href="#")
             .imgbox
