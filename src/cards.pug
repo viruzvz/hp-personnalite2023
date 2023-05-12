@@ -1,7 +1,7 @@
 section.position-relative
   .container.cardbox-absolute
-    .cardbox-flex
-      mixin cardbox(cardclass, path, title, text, button)
+    .cardbox-flex.animation-element.cardA
+      mixin cardbox(cardclass, path, title, text, button, id)
         if button
           .cardbox.perfil(class=cardclass)
             .imgbox
@@ -11,7 +11,7 @@ section.position-relative
             img(src="assets/equipe/dr-thales-assinatura.png", alt="Assinatura")
             p 
               = text
-            button.btn.btn-outline-primary.btn-sm.rounded-0(type="submit") Saiba mais
+            button.btn.btn-outline-primary.btn-sm.rounded-0(type="submit" data-bs-toggle='modal' data-bs-target=id) Saiba mais
         else
           a.cardbox(class=cardclass, href="#")
             .imgbox

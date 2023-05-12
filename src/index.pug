@@ -3,14 +3,28 @@ html(lang='en')
   head
     meta(charset='utf-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
+    <meta property="og:url" content="http://www.personnaliteodontologia.com.br/">
+    <meta property="og:type" content="Dentista, Saúde Bucal, Odontologia, Implantodontia e estética do sorriso">
+    <meta property="og:title" content="Instituto Personnalité">
+    <meta property="og:description" content="Implantodontia e estética do sorriso.">
+    <meta property="og:image" content="http://www.personnaliteodontologia.com.br/assets/logo.svg">
     link(href='https://fonts.cdnfonts.com/css/montserrat' rel='stylesheet')
-    title Arquetipo-bootstrap 5.2
+    title Instituto Personnalité - Implantodontia e estética do sorriso.
     link(rel='stylesheet', href='styles/main.scss')
-    link(rel='icon', type='image/svg+xml', href='assets/favicon.svg')
+    link(rel='apple-touch-icon' sizes='180x180' href='assets/favicon/apple-touch-icon.png')
+    link(rel='icon' type='image/png' sizes='32x32' href='assets/favicon/favicon-32x32.png')
+    link(rel='icon' type='image/png' sizes='16x16' href='assets/favicon/favicon-16x16.png')
+    link(rel='manifest' href='assets/favicon/site.webmanifest')
     script(type="module" src='scripts/main.js')
     script(type="module" src='scripts/bootstrap.js')
     script(src='https://cdn2.woxo.tech/a.js#64586f1c510f85d5292ec1f7' async='' data-usrc='')
     script(src='../node_modules/jquery/dist/jquery.js')
+    script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-89184615-1')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-89184615-1');
 
   body 
     header
@@ -25,4 +39,5 @@ html(lang='en')
       include booking.pug
       include map.pug
       include footer.pug
+      include modal.pug
     footer

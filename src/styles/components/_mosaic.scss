@@ -35,10 +35,28 @@
 }
 
 .mosaic-image2 {
-  background-image: url(../assets/aparelhos2.jpg)
+  background-image: url(../assets/aparelhos2.jpg);
+  @include media-breakpoint-down(lg) {
+    background-position: center;
+  }
+  @include media-breakpoint-down(md) {
+    background-position: 0px;
+  }
+  @include media-breakpoint-down(sm) {
+    background-position: 0px bottom;
+  }
 }
 
 .mosaic-image3 {
   background-image: url(../assets/aparelhos.jpg);
   background-position: -200px 0px;
+  @include media-breakpoint-down(lg) {
+    background-position: center;
+  }
+  @include media-breakpoint-down(md) {
+    background-position: 0px;
+  }
+  @include media-breakpoint-down(sm) {
+    background-position: -55px;
+  }
 }

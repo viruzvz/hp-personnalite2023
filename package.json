@@ -26,8 +26,10 @@
     "jquery": "^3.6.4"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
     "@parcel/transformer-pug": "^2.8.0",
     "@parcel/transformer-sass": "^2.8.0",
+    "@parcel/transformer-webmanifest": "^2.8.3",
     "@webcoti/eslint-config": "^1.6.1",
     "@webcoti/prettier-config": "^1.6.0",
     "@webcoti/stylelint-config": "^1.5.0",

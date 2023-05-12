@@ -3,6 +3,7 @@
  */
  .animated {
   animation-duration: 1.5s;
+  animation-fill-mode: both;
 }
 
 @-webkit-keyframes fadeInRight {
@@ -31,6 +32,10 @@
 
 .fadeInRight {
   animation-name: fadeInRight;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
 }
 
 @-webkit-keyframes fadeIn {
@@ -54,7 +59,11 @@
 }
 
 .fadeIn {
-  animation-name: fadeIn
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -83,7 +92,11 @@
 }
 
 .fadeInDown {
-  animation-name: fadeInDown
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
 }
 
 @-webkit-keyframes fadeInDownBig {
@@ -111,7 +124,11 @@
 }
 
 .fadeInDownBig {
-  animation-name: fadeInDownBig
+  animation-name: fadeInDownBig;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
 }
 
 @-webkit-keyframes fadeInLeft {
@@ -140,8 +157,11 @@
 }
 
 .fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft
+  animation-name: fadeInLeft;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
 }
 
 @-webkit-keyframes fadeInLeftBig {
@@ -169,7 +189,11 @@
 }
 
 .fadeInLeftBig {
-  animation-name: fadeInLeftBig
+  animation-name: fadeInLeftBig;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
 }
 
 @-webkit-keyframes fadeInRight {

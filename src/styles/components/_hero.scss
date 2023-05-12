@@ -30,10 +30,22 @@
   background-image: url('../assets/slide.jpg');
   background-size: cover;
   background-position: center;
+  @include media-breakpoint-down(lg) {
+    background-position: -290px;
+  }
+  @include media-breakpoint-down(md) {
+    background-position: 0px;
+  }
 }
 
 .img-2 {
   background-image: url('../assets/slide-2.jpg');
   background-size: cover;
   background-position: center;
+  @include media-breakpoint-down(lg) {
+    background-position: -290px;
+  }
+  @include media-breakpoint-down(md) {
+    background-position: 0px;
+  }
 }
