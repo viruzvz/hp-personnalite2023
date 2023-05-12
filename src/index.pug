@@ -26,12 +26,12 @@ html(lang='en')
       gtag('js', new Date());
       gtag('config', 'UA-89184615-1');
 
-  body 
+  body
     header
       include social.pug
       include navbar.pug
       include carousel.pug
-    section.content
+    section.content#home
       include cards.pug
       include resumo.pug
       include servicos.pug
@@ -40,4 +40,5 @@ html(lang='en')
       include map.pug
       include footer.pug
       include modal.pug
+      a.link.shadow.backtotop(title="Voltar para o topo")
     footer

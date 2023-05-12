@@ -1,4 +1,4 @@
-#carousel-hero.carousel.hero.slide.carousel-fade
+#carousel-hero.carousel.hero.slide.carousel-fade(data-bs-ride="carousel")
   .carousel-indicators
     button.active(type='button' data-bs-target='#carousel-hero' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
     button(type='button' data-bs-target='#carousel-hero' data-bs-slide-to='1' aria-label='Slide 2')
@@ -15,7 +15,7 @@
                   = h1
                 p.animated.fadeInLeft 
                   = p
-      +container-hero('col-md-6','INSTITUTO PERSONNALITÉ','Seja bem vindo a estética do sorriso, conheça a personnalité e agende a sua consulta!')
+      +container-hero('col-md-6','INSTITUTO PERSONNALITÉ','Seja bem vindo a Implantodontia e estética do sorriso! Conheça a personnalité e agende a sua consulta!')
     .carousel-item
       .carousel-hero--image.img-2
       +container-hero('col-md-6','CIRURGIAS ESPECIALIZADAS','. Id, cumque odit! Placeat ea, hic esse, impedit, dolores blanditiis sint commodi officiis iure modi provident odit accusamus laboriosam ad aliquid nemo.')
