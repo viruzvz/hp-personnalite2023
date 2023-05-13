@@ -1,8 +1,0 @@
-// import '@/scripts/bootstrap'
-// import '@/scripts/jquery'
-import '@/scripts/maps'
-// import '@/scripts/navbar'
-// import '@/scripts/loadbars'
-// import '@/scripts/anime'
-// import '@/scripts/scrollanchor'
-// import '@/scripts/backtotop'
