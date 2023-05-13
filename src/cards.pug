@@ -18,12 +18,17 @@ section.position-relative
               img(src=path, alt="")
             .title
               = title
-            p 
-              = text
+            if block 
+              block
 
           
 
-      +cardbox('link link-white cardbox-style1','assets/convenios.svg','CONVÊNIOS','Uma grande variedade de convênios, confira aqui o seu.')
-      +cardbox('link link-white cardbox-style1','assets/clock.svg','HORÁRIOS',' Segunda a sexta de 08h00 às 19h00.')
-      +cardbox('link link-white cardbox-style1','assets/users.svg','CORPO CLÍNICO','A Personnalité conta com uma equipe completa, de clínica geral até cirugias avançadas ou estética do sorriso.')
-      +cardbox('link link-white cardbox-style1','assets/calendar.svg','AGENDAMENTO','Entre em contato através do nosso whatsapp e faça seu agendamento. Estamos te aguardando.')
+      +cardbox('link link-white cardbox-style1','assets/convenios.svg','CONVÊNIOS')
+        p Uma grande variedade de <b>convênios</b>, confira aqui o seu.
+      +cardbox('link link-white cardbox-style1','assets/clock.svg','HORÁRIOS')
+        p Segunda a sexta de 
+          strong 08h00 às 19h00.
+      +cardbox('link link-white cardbox-style1','assets/users.svg','CORPO CLÍNICO')
+        p A <b>Personnalité</b> conta com uma equipe completa, de clínica geral até cirugias avançadas ou estética do sorriso.
+      +cardbox('link link-white cardbox-style1','assets/calendar.svg','AGENDAMENTO')
+        p Entre em contato através do nosso <b>whatsapp</b> e faça seu agendamento. Estamos te aguardando.

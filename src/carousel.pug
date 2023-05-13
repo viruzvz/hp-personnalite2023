@@ -6,22 +6,22 @@
   .carousel-inner
     .carousel-item.active
       .carousel-hero--image.img-1
-      mixin container-hero(col, h1, p)
+      mixin container-hero(col, anime, h1, p)
         .container.container-hero
           .row
             div(class=col)
               .caption
-                h1.fw-bold.text-xl6.animated.fadeInRight
+                h1.fw-bold.text-xl6.animated(class=anime)
                   = h1
                 p.animated.fadeInLeft 
                   = p
-      +container-hero('col-md-6','INSTITUTO PERSONNALITÉ','Seja bem vindo a Implantodontia e estética do sorriso! Conheça a personnalité e agende a sua consulta!')
+      +container-hero('col-md-6','fadeInRight','INSTITUTO PERSONNALITÉ','Seja bem vindo a Implantodontia e estética do sorriso! Conheça a personnalité e agende a sua consulta!')
     .carousel-item
       .carousel-hero--image.img-2
-      +container-hero('col-md-6','CIRURGIAS ESPECIALIZADAS','. Id, cumque odit! Placeat ea, hic esse, impedit, dolores blanditiis sint commodi officiis iure modi provident odit accusamus laboriosam ad aliquid nemo.')
+      +container-hero('col-md-6','fadeInDown','CIRURGIAS ESPECIALIZADAS','Profissionais doutorados, especializados e com equipamentos de última geração.')
     .carousel-item
       .carousel-hero--image.img-3
-      +container-hero('col-md-6','TITULO','. Id, cumque odit! Placeat ea, hic esse, impedit, dolores blanditiis sint commodi officiis iure modi provident odit accusamus laboriosam ad aliquid nemo.')
+      +container-hero('col-md-6','fadeInDownBig','LIMPEZA E FLUOR','Atendimento especializado e rápido, marque o melhor horário e mantenha sua saúde bucal em dia.')
   button.carousel-control-prev(type='button' data-bs-target='#carousel-hero' data-bs-slide='prev')
     span.carousel-control-prev-icon(aria-hidden='true')
     span.visually-hidden Previous

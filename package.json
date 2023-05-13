@@ -21,6 +21,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.1",
     "@googlemaps/js-api-loader": "^1.15.1",
+    "@parcel/service-worker": "^2.8.3",
     "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.4"
@@ -39,9 +40,6 @@
     "stylelint": "^14.16.0"
   },
   "alias": {
-    "@/*": "./src/$1",
-    "jquery": {
-      "global": "jQuery"
-    }
+    "@/*": "./src/$1"
   }
 }
